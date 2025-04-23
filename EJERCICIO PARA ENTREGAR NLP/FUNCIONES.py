@@ -42,7 +42,7 @@ def Array_StopWords (texto_lematizado):
     tokens = word_tokenize(texto_lematizado)
     return tokens
 
-#lo hice pero no lo utilice en la pestaña principal porque no supe como aplicarlo
+#lo utilice en la funcion aplicar_lematizacion para poder trabajar con los verbos, adverbios, adjetivos y sustantivos
 def get_wordnet_pos(word):
     tag = nltk.pos_tag([word])[0][1][0].upper()
     tag_dict = {"J": wordnet.ADJ,
